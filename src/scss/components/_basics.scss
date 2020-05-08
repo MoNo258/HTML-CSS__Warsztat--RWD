@@ -1,0 +1,18 @@
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVV---------- main part: basics ----------VVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+}
+
+.container {
+  //max-width: 1124px;
+  margin: 0 auto;
+}

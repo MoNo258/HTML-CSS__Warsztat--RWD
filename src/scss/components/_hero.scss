@@ -1,0 +1,117 @@
+
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVV---------- hero ----------VVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.hero{
+  /*height: 100vh;*/
+  /*height: 912px;*/
+  /*min-height: 712px;*/
+}
+
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVV---------- banner in hero ----------VVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.banner{
+  height: 712px;
+  padding-top: 130px;
+  margin-top: var(--height-header);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  //position: relative;
+}
+
+//.banner__bkg{
+//  background-image: url("../images/background.png");
+//  background-position: bottom;
+//  background-size: cover;
+//  min-height: 508px;
+//  width: 100%;
+//}
+
+
+.banner__bkg{
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  &::before{
+    content: "";
+    display: block;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    padding-top:  519 / 1735 * 100%;
+  }
+}
+
+.banner__title{
+  font-size: 49px;
+  margin-bottom: 20px;
+}
+.banner__text{
+  font-size: 16px;
+  font-family: var(--font-secondary);
+  margin-bottom: 38px;
+}
+.banner__button{
+  margin: 23px 0;
+}
+.banner__button-btn{
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 23px 157px;
+  border-radius: 40px;
+  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+
+
+@media (max-width: 768px){
+  .banner {
+    padding-top: 100px;
+  }
+  .banner__bkg{
+    width: 170%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner__button-btn {
+    padding: 23px 92px;
+  }
+}
+
+@media (max-width: 408px) {
+
+  .banner__title{
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .banner__text{
+    width: 70%;
+    text-align: center;
+  }
+
+  .banner__button-btn {
+    padding: 18px 72px;
+  }
+
+  .banner {
+    padding-top: 90px;
+    height: 500px;
+  }
+
+  .banner__bkg{
+    width: 200%;
+    overflow: hidden;
+  }
+}

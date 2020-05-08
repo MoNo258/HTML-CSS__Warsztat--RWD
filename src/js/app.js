@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+//  JS script to add sticky class to header when page is scrolled
+// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
 document.addEventListener('DOMContentLoaded', function() {
 
     const header = document.querySelector("header");

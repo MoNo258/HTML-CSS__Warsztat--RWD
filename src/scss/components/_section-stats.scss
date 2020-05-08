@@ -1,0 +1,118 @@
+
+///*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+///*VVVVVVVVVVVVVVVVVVVVVV---------- section stats ----------VVVVVVVVVVVVVVVVVVVVVV*/
+///*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.section-stats{
+  height: 531px;
+  width: 100%;
+  display: flex;
+}
+.section-stats{}
+
+.stats-title{
+  font-size: 36px;
+  margin: 100px 0;
+  width: 100%;
+  padding-top: 100px;
+}
+.stats-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stats-card{
+  height: 168px;
+  width: 176px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.stats-card_img{
+  max-width: 60%;
+  margin: 5px auto 0 25px;
+}
+
+.stats-card_img.stats-card_img-eye{
+  max-width: 60%;
+  margin: 15px auto 0 25px;
+}
+
+.stats-card_pseudo::before{
+  content: "";
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
+.stats-card_pseudo-first::before {
+  background: var(--color-redish);
+}
+.stats-card_pseudo-second::before{
+  background: var(--color-primary);
+}
+.stats-card_pseudo-third::before{
+  background: var(--color-green);
+}
+
+.stats-card__title{
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  position: relative;
+}
+.stats-card__text{
+  font-size: 16px;
+  font-family: var(--font-primary);
+  text-align: center;
+  color: var(--color-grey);
+  height: 48px;
+  line-height: 19px;
+}
+
+
+//MEDIA properties starts here
+
+@media (max-width: 768px){
+  .stats-title{
+    text-align: center;
+    margin: 80px auto;
+    width: 80%;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 576px){
+  .stats-title{
+    margin: 0 auto 50px auto;
+  }
+
+  .stats-list{
+    flex-direction: column;
+  }
+
+  .stats-card{
+    margin-bottom: 20px;
+  }
+
+  .section-stats{
+    height: 680px;
+  }
+}
+
+@media (max-width: 375px){
+  .stats-title{
+    font-size: 30px;
+    margin: 60px auto 50px auto;
+  }
+
+  .section-stats{
+    height: 760px;
+  }
+}

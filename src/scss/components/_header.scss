@@ -1,0 +1,118 @@
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVV---------- header ----------VVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--height-header);
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-light-grey);
+  box-shadow: 0 3px 6px #00000029;
+}
+
+/*VVVVVVVVVVVVVVVVVVVVVV---------- sticky class for scrolling ----------VVVVVVVVVVVVVVVVVVVVVV*/
+.header.sticky {
+  transition: 0.5s;
+  background: #fff;
+  box-shadow: 0 3px 6px #00000029;
+  z-index: 2;
+}
+
+.header__container{
+  /*max-width: 1352px;*/
+  margin-left: 136px;
+  margin-right: 136px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.logo{
+  color: var(--color-primary);
+  font-size: 32px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.menu{
+  height: 100%;
+}
+
+.menu__list{
+  height: 100%;
+  display: flex;
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__list-link{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding-left: 95px;*/
+  margin-left: 95px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: 11px;
+  color: var(--color-grey);
+
+}
+
+.menu__list-link:hover {
+  border-bottom: var(--border-link-hover) solid var(--color-primary);
+  padding-top: var(--border-link-hover);
+  color: var(--color-black);
+}
+
+@media (max-width: 1040px) {
+  .header__container {
+    /*max-width: 1352px;*/
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+  .menu__list-link {
+    margin-left: 65px;
+  }
+}
+
+@media (max-width: 860px) {
+  .header__container {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .menu__list-link {
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .menu__list-link {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__container {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .menu__list{
+    display: none;
+  }
+}

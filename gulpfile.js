@@ -30,8 +30,8 @@ const server = (cb) => {
             baseDir: "./dist"
         },
         notify: false,
-        //host: "192.168.0.24",
-        //port: 3000,
+        host: "192.168.1.192",
+        port: 3000,
         open: true,
         //browser: "google chrome"
     });
