@@ -1,9 +1,10 @@
-////variable
-//@import "variables";
-//@import "mixins";
-//
-////reset, normalize, helper-class
+//variable
+@import "variables";
+@import "mixins";
+
+//reset, normalize, helper-class
 //@import "partials/normalize";
+@import "partials/reset";
 
 
 
@@ -144,7 +145,7 @@ body {
 }
 
 .banner__bkg{
-  background-image: url("../dist/images/background.png");
+  background-image: url("../images/background.png");
   background-position: bottom;
   background-size: cover;
   min-height: 508px;
@@ -573,12 +574,12 @@ body {
 }
 
 .card-list__item-yes::before{
-  content: url("../../dist/images/checkmark-1.svg");
+  content: url("../images/ckechmark-1.svg");
   position: absolute;
   left: 0;
 }
 .card-list__item-no::before{
-  content: url("../../dist/images/close.svg");
+  content: url("../images/close.svg");
   position: absolute;
   left: 0;
 }
@@ -664,13 +665,13 @@ body {
 .contact-details__el-phone{}
 
 .contact-details__el-mail::before{
-  content: url("../../dist/images/mail-icon.svg");
+  content: url("../images/mail-icon.svg");
   position: absolute;
   top: -6px;
   left: 0;
 }
 .contact-details__el-phone::before{
-  content: url("../../dist/images/phone-icon.svg");
+  content: url("../images/phone-icon.svg");
   position: absolute;
   top: -6px;
   left: 0;
@@ -735,7 +736,7 @@ body {
 }
 
 .form-checkbox__input:checked{
-  background-image: url("../../dist/images/checkmark.svg");
+  background-image: url("../images/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -802,14 +803,14 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("../../dist/images/twitter.svg");
+  background-image: url("../images/twitter.svg");
   margin-right: 20px;
 }
 .footer-facebook{
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("../../dist/images/facebook.svg");
+  background-image: url("../images/facebook.svg");
 }
 
 
