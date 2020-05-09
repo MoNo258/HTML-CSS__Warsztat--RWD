@@ -187,11 +187,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
-
     height: 560px;
     width: 482px;
   }
-
   .benefit-order__one1,
   .benefit-order__two2,
   .benefit-order__two3{
@@ -202,6 +200,13 @@
   .benefit-order__two2,
   .benefit-order__one3{
     padding-bottom: 0px;
+  }
+
+  .benefit-info__title{
+    width: 100%;
+  }
+  .benefit-info__text{
+    width: 100%;
   }
 
   .benefit-info__text1::after,
@@ -231,7 +236,6 @@
     height: 80%;
   }
 
-
   .benefit-order__one2{
     justify-items: center;
     padding-left: 0px;
@@ -251,11 +255,9 @@
     padding: 30px;
   }
 
-
-
-
-
   .benefit-order__two3{
+    //justify-items: center;
+    //padding-left: 0px;
     img{
     }
     &::after {
@@ -264,79 +266,8 @@
       height: 272px;
       width: 480px;
     }
-    margin-left: 0px;
+    margin-left: 0;
   }
-
-
-
-
-
-  //basic
-
-  //
-
-  //
-
-  //.benefit-info__text{
-  //  width: 416px;
-  //  font-family: var(--font-secondary);
-  //  font-size: 16px;
-  //  line-height: 22px;
-  //  position: relative;
-  //}
-  //
-  //.benefit-info__text1::after{
-  //  content: "";
-  //  position: absolute;
-  //  left: 0;
-  //  bottom: -50px;
-  //  height: 4px;
-  //  width: 80%;
-  //  border-bottom: 4px solid var(--color-redish);
-  //}
-  //
-  //.benefit-info__text2::after{
-  //  content: "";
-  //  position: absolute;
-  //  left: 0;
-  //  bottom: -50px;
-  //  height: 4px;
-  //  width: 80%;
-  //  border-bottom: 4px solid var(--color-primary);
-  //}
-  //
-  //.benefit-info__text3::after{
-  //  content: "";
-  //  position: absolute;
-  //  left: 0;
-  //  bottom: -50px;
-  //  height: 4px;
-  //  width: 80%;
-  //  border-bottom: 4px solid var(--color-green);
-  //}
-  //
-  //.benefit-info__title{
-  //  font-family: var(--font-primary);
-  //  font-size: 36px;
-  //  line-height: 42px;
-  //  margin-bottom: 30px;
-  //}
-  //
-  //.benefit-info__title3{
-  //  width: 348px;
-  //}
-  //
-  //
-  //
-
-
-
-
-
-
-
-
-
 }
 
 @media (max-width: 768px){
@@ -346,10 +277,150 @@
 
 @media (max-width: 576px){
 
+  .section-benefits{
+    height: 1730px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .benefit-info__title{
+    font-size: 30px;
+  }
+
+  .benefit-info__text{
+    font-size: 13px;
+  }
+
+  .benefits-card{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    height: 500px;
+    width: 360px;
+  }
+  .benefit-order__one1,
+  .benefit-order__two2,
+  .benefit-order__two3{
+    order: 2;
+  }
+
+  .benefit-order__one1,
+  .benefit-order__two2,
+  .benefit-order__one3{
+    padding: 30px;
+  }
+
+  .benefit-info__text1::after,
+  .benefit-info__text2::after,
+  .benefit-info__text3::after{
+    border: none;
+  }
+
+  .benefit-order__two1{
+    img{
+    }
+    &::after {
+      height: 110px;
+      width: 110px;
+    }
+  }
+
+  .benefit-order__one2{
+    img{
+    }
+    &::after {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  .benefit-order__two3{
+    padding: 0;
+    margin: 0;
+    img{
+    }
+    &::after {
+      //top: 0;
+      //left: 0;
+      height: 221px;
+      width: 358px;
+    }
+  }
 }
+
+
+
 
 
 
 @media (max-width: 375px){
 
+  .section-benefits{
+    height: 1340px;
+    //padding-top: 80px;
+    //padding-bottom: 80px;
+  }
+
+  .benefit-info__title{
+    margin-bottom: 10px;
+    line-height: 34px;
+  }
+
+  .benefit-info__text{
+    line-height: 15px;
+  }
+
+  .benefits-card{
+    place-items: center;
+    height: 370px;
+    width: 314px;
+    overflow: hidden;
+  }
+
+  .benefit-order__one1,
+  .benefit-order__two2,
+  .benefit-order__one3{
+    padding: 20px;
+  }
+
+  .benefit-order__one1{
+    align-self: flex-start;
+  }
+
+  .benefit-order__two1{
+    img{
+    }
+    &::after {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .benefit-order__one2{
+    img{
+    }
+    &::after {
+      height: 160px;
+      width: 160px;
+      top: 10%;
+      left: 12%;
+    }
+  }
+
+  .benefit-order__two3{
+    padding: 0;
+    margin: 0;
+    img{
+      max-width: 80%;
+      margin-top: 30px;
+    }
+    &::after {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .benefit-order__one3{
+    padding-top: 60px;
+  }
 }
