@@ -24,7 +24,22 @@ const showError = function(err) {
     console.log(c.red("==============================="));
 };
 
-const server = (cb) => {
+// const server = (cb) => {
+//     browserSync.init({
+//         server: {
+//             baseDir: "./dist"
+//         },
+//         notify: false,
+//         host: "192.168.1.192",
+//         port: 3000,
+//         open: true,
+//         //browser: "google chrome"
+//     });
+//
+//     cb();
+// };
+
+function server(cb) {
     browserSync.init({
         server: {
             baseDir: "./dist"
@@ -32,12 +47,9 @@ const server = (cb) => {
         notify: false,
         host: "192.168.1.192",
         port: 3000,
-        open: true,
-        //browser: "google chrome"
     });
-
     cb();
-};
+}
 
 const css = function() {
     return gulp.src("src/scss/style.scss")

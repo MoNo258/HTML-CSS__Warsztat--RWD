@@ -73,13 +73,20 @@
 }
 
 
+
+//MEDIA properties starts here
+
+
+
 @media (max-width: 768px){
   .banner {
     padding-top: 100px;
   }
   .banner__bkg{
-    width: 170%;
-    overflow: hidden;
+    &::before{
+      padding-top:  300 / 750 * 100%;
+      background-size: cover;
+    }
   }
 }
 
@@ -110,8 +117,5 @@
     height: 500px;
   }
 
-  .banner__bkg{
-    width: 200%;
-    overflow: hidden;
-  }
+  .banner__bkg{}
 }

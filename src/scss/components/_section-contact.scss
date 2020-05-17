@@ -137,3 +137,64 @@
   box-shadow: 5px 10px 14px var(--color-primary-shadow);
   padding: 20px 97px;
 }
+
+
+//MEDIA properties starts here
+
+@media (max-width: 1080px){
+
+  .contact-container{
+    width: 700px;
+    height: 376px;
+  }
+  .contact-title{
+    font-size: 40px;
+  }
+  .contact-details{
+    flex-direction: column;
+  }
+  .contact-details__el{
+    padding: 0 20px 20px 40px;
+  }
+
+}
+
+
+@media (max-width: 800px){
+
+  .contact-container{
+    width: 500px;
+    height: 660px;
+    flex-direction: column;
+  }
+  .contact-info{
+    width: 100%;
+  }
+  .contact-form{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px){
+  .contact-container{
+    width: 450px;
+    height: 660px;
+  }
+}
+
+
+@media (max-width: 576px){
+
+  .contact-container{
+    width: 360px;
+    height: 660px;
+  }
+}
+
+@media (max-width: 375px){
+  .contact-container{
+    width: 316px;
+    height: 651px;
+  }
+}
