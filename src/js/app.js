@@ -27,3 +27,20 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
 });
+
+// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+//  JS script to add show class to menu-list
+// VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const btn = document.querySelector(".page-nav-burger");
+    const menu = document.querySelector(".menu__list");
+
+    btn.addEventListener("click", function() {
+        menu.classList.toggle("show");
+    });
+
+});
