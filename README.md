@@ -1,2 +1,8 @@
 # HTML-CSS__Warsztat
-Zaawansowany HTML i CSS - Warsztat na bazie projektu
+Workshop based on project (in Adobe XD) during Coders Lab course.
+
+Technologies used:
+* `HTML5`
+* `Sass Dart`
+* `Gulp` (for Sass)
+
